@@ -18,12 +18,29 @@
   color: red;
   background-color: white;
 }
+.btn{
+    background-color:black;
+    color:white;
+}
+.btn:hover{
+  background-color:orange;
+  transition: 0.4s ease-in-out;
+}
+input[type=text]{
+  border:2px solid blue;
+  background-color: lightblue;
+  border-radius:6px;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
 *{
-background-color: lightgreen;
+background-color: #EFE1CE;
 }
 </style>
 
-<h1 style="color: blue;text-align:center;">My Page</h1>  
+<h1 style="color: blue;text-align:center; font-family:Arial;">My Page</h1>  
 <p id="para1">Hello World!</p>
 <h2 class="red-text">Success in Life</h2>
 </head>
@@ -45,12 +62,12 @@ background-color: lightgreen;
   </div>
 
   <form action="/submit">
-     <h2 style="color: red;">Do you think you are</h2>
-    <label><input type="checkbox" name="personality" > Strong</label>
-    <label><input type="checkbox" name="personality"> Lazy</label>
-    <label><input type="checkbox" name="personality"> Energetic</label><br><br>
-    <input type="text" placeholder="Add Comments" required><br><br>
-    <button type="submit">Submit</button>
+     <h2 style="color: #D2386C;">Do you think you are</h2>
+    <label><input class="check" type="radio" name="personality" > Strong</label>
+    <label><input class="check" type="radio" name="personality"> Lazy</label>
+    <label><input  class="check" type="radio" name="personality"> Energetic</label><br><br>
+    <input class="inp" type="text" placeholder="Add Comments" required><br><br>
+    <button class="btn" type="submit">Submit</button>
   </form>
 </main>
 </html>
